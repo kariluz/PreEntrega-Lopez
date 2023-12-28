@@ -1,20 +1,27 @@
-import React from "react";
 import "./App.css";
 import "./assets/bootstrap-5.3.1-dist/css/bootstrap.min.css";
 import "./assets/bootstrap-5.3.1-dist/js/bootstrap.bundle.min.js";
-import NavBar from "./components/NavBar";
-import ItemListContainer from "./components/ItemListContainer.jsx";
+import Header from "./components/Header/Header.jsx";
+import NavBar from "./components/NavBar/NavBar.jsx";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
+import ItemDetailContainer from "./pages/ItemDetailContainer/ItemDetailContainer.jsx"
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
-class App extends React.Component {
-  render() {
+const App = () => {  
     return(
-      <div className="App">
-        <NavBar/>
-        <ItemListContainer greeting="Hacemos realidad tus sueños en T-shirt´s" />
-        <h1></h1>
-      </div>
+      <Router>
+        <div className="App">
+          <NavBar/>
+          <Header/>
+          <h1></h1>        
+          <Routes>
+            <Route path="/" element={<ItemListContainer/>} />
+            <Route path="/detail/:id" element={<ItemDetailContainer/>} />
+          </Routes>
+        </div>
+
+      </Router>
     );
   }
-}
 
 export default App

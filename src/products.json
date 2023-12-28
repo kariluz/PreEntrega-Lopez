@@ -1,0 +1,63 @@
+{
+    "products": [
+        {"imagen": "franela1.jpg",
+        "id":"1", 
+        "categoria": "Franela", 
+        "motivo": "Attack on Titan"
+        },
+
+        {"imagen": "hoodie1.jpg",
+        "id":"2", 
+        "categoria": "Hoddie", 
+        "motivo": "Attack on Titan"
+        },
+
+        {"imagen": "sueter1.jpg",
+        "id":"3", 
+        "categoria": "Sweater", 
+        "motivo": "Attack on Titan"
+        }, 
+
+        {"imagen": "franela2.jpg",
+        "id":"4", 
+        "categoria": "Franela", 
+        "motivo": "Dragon Ball"
+        },
+
+        {"imagen": "sueter2.jpg",
+        "id":"5", 
+        "categoria": "Sweater", 
+        "motivo": "The Simpsons"
+        },
+
+        {"imagen": "franela3.jpg",
+        "id":"6", 
+        "categoria": "Franela", 
+        "motivo": "Nirvana"
+        },
+
+        {"imagen": "sueter3.jpg",
+        "id":"7", 
+        "categoria": "Sweater", 
+        "motivo": "Futurama"
+        },
+
+        {"imagen": "franela4.jpg",
+        "id":"8", 
+        "categoria": "Franela", 
+        "motivo": "Marshmello"
+        },
+
+        {"imagen": "sueter4.jpg",
+        "id":"9", 
+        "categoria": "Sweater", 
+        "motivo": "Minecraft"
+        },
+
+        {"imagen": "franela5.jpg",
+        "id":"10", 
+        "categoria": "Franela", 
+        "motivo": "Star Wars & Mickey"
+        }
+    ]
+}
