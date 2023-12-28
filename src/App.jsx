@@ -5,6 +5,7 @@ import Header from "./components/Header/Header.jsx";
 import NavBar from "./components/NavBar/NavBar.jsx";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx";
 import ItemDetailContainer from "./pages/ItemDetailContainer/ItemDetailContainer.jsx"
+import Category from "./pages/Category/Category.jsx";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 const App = () => {  
@@ -17,6 +18,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<ItemListContainer/>} />
             <Route path="/detail/:id" element={<ItemDetailContainer/>} />
+            <Route path="/category/:categoryId" element={<Category/>} />
           </Routes>
         </div>
 

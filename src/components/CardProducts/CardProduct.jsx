@@ -11,7 +11,7 @@ const CardProduct = ({product}) => {
         <CardActionArea>
             <CardMedia
             component="img"
-            height="140"
+            height="200"
             image={`/src/assets/img/${product.imagen}`}
             alt=""
             />

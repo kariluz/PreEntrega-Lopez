@@ -1,6 +1,7 @@
 import "./NavBar.css";
 import img from "../../assets/Img/yeah-logo-2.png";
 import CartWidget from "../CartWidget/CartWidget.jsx";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -13,18 +14,18 @@ const NavBar = () => {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav">
-                        <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="#">T-Shirt´s</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="#">Hoodies</a>
-                        </li>
-                        <li className="nav-item">
-                        <a className="nav-link" href="#">Sweaters</a>
-                        </li>
+                        <Link className="nav-item nav-link active" to="/">
+                        Home
+                        </Link>
+                        <Link className="nav-item nav-link" to="/category/Franela">
+                        T-Shirt´s                   
+                        </Link>
+                        <Link className="nav-item nav-link" to="/category/Hoodie">
+                        Hoodies
+                        </Link>
+                        <Link className="nav-item nav-link" to="/category/Sweater">
+                        Sweaters
+                        </Link>
                     </ul>
                     </div>
                 </div>

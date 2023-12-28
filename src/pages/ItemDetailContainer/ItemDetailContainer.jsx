@@ -2,7 +2,6 @@ import {useState, useEffect} from "react";
 import CardProduct from "../../components/CardProducts/CardProduct";
 import { useParams } from "react-router-dom";
 import products from "../../products.json";
-import { WidgetsSharp } from "@mui/icons-material";
 import "../ItemDetailContainer/ItemDetailContainer.css"
 
 const ItemDetailContainer = () => {
